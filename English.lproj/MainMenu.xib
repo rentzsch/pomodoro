@@ -8,7 +8,6 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="453"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -49,7 +48,7 @@
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<object class="NSView" key="NSWindowView" id="890379863">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -3532,13 +3531,13 @@
 													<object class="NSButton" id="667827401">
 														<reference key="NSNextResponder" ref="99429457"/>
 														<int key="NSvFlags">268</int>
-														<string key="NSFrame">{{284, 9}, {186, 32}}</string>
+														<string key="NSFrame">{{283, 9}, {188, 32}}</string>
 														<reference key="NSSuperview" ref="99429457"/>
 														<bool key="NSEnabled">YES</bool>
 														<object class="BGHUDButtonCell" key="NSCell" id="187246012">
 															<int key="NSCellFlags">-2080244224</int>
 															<int key="NSCellFlags2">134217728</int>
-															<string key="NSContents">Check for updates now</string>
+															<string key="NSContents">Check for Updates Now</string>
 															<reference key="NSSupport" ref="284816210"/>
 															<reference key="NSControlView" ref="667827401"/>
 															<int key="NSButtonFlags">-2038284033</int>
@@ -3615,7 +3614,6 @@
 						</object>
 					</object>
 					<string key="NSFrameSize">{524, 474}</string>
-					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
 				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>
@@ -3632,27 +3630,9 @@
 						<reference key="NSOnImage" ref="423028748"/>
 						<reference key="NSMixedImage" ref="1072024853"/>
 					</object>
-					<object class="NSMenuItem" id="896170716">
-						<reference key="NSMenu" ref="740126098"/>
-						<string key="NSTitle">Check for updates</string>
-						<string key="NSKeyEquiv"/>
-						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="423028748"/>
-						<reference key="NSMixedImage" ref="1072024853"/>
-					</object>
-					<object class="NSMenuItem" id="563608096">
-						<reference key="NSMenu" ref="740126098"/>
-						<bool key="NSIsDisabled">YES</bool>
-						<bool key="NSIsSeparator">YES</bool>
-						<string key="NSTitle"/>
-						<string key="NSKeyEquiv"/>
-						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="423028748"/>
-						<reference key="NSMixedImage" ref="1072024853"/>
-					</object>
 					<object class="NSMenuItem" id="743168075">
 						<reference key="NSMenu" ref="740126098"/>
-						<string key="NSTitle">Pomodoro setup</string>
+						<string key="NSTitle">Pomodoro Preferences...</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="423028748"/>
@@ -3660,7 +3640,7 @@
 					</object>
 					<object class="NSMenuItem" id="552175012">
 						<reference key="NSMenu" ref="740126098"/>
-						<string key="NSTitle">Pomodoro stats</string>
+						<string key="NSTitle">Pomodoro Stats</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
 						<reference key="NSOnImage" ref="423028748"/>
@@ -3762,7 +3742,7 @@
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<object class="NSView" key="NSWindowView" id="364910145">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -3771,6 +3751,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{19, 46}, {376, 22}}</string>
 							<reference key="NSSuperview" ref="364910145"/>
+							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="BGHUDTextFieldCell" key="NSCell" id="563090913">
 								<int key="NSCellFlags">-1804468671</int>
@@ -3791,6 +3772,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{17, 76}, {188, 17}}</string>
 							<reference key="NSSuperview" ref="364910145"/>
+							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="151183705">
 								<int key="NSCellFlags">68288064</int>
@@ -3808,11 +3790,12 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{253, 7}, {98, 32}}</string>
 							<reference key="NSSuperview" ref="364910145"/>
+							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="BGHUDButtonCell" key="NSCell" id="832714161">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Ok</string>
+								<string key="NSContents">OK</string>
 								<reference key="NSSupport" ref="284816210"/>
 								<reference key="NSControlView" ref="967434074"/>
 								<int key="NSButtonFlags">-2038284033</int>
@@ -3830,6 +3813,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{62, 7}, {98, 32}}</string>
 							<reference key="NSSuperview" ref="364910145"/>
+							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="BGHUDButtonCell" key="NSCell" id="64290512">
 								<int key="NSCellFlags">67239424</int>
@@ -3849,6 +3833,8 @@
 						</object>
 					</object>
 					<string key="NSFrameSize">{415, 113}</string>
+					<reference key="NSSuperview"/>
+					<reference key="NSWindow"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
 				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>
@@ -5016,14 +5002,6 @@
 						</object>
 					</object>
 					<int key="connectionID">713</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">checkForUpdates:</string>
-						<reference key="source" ref="427706282"/>
-						<reference key="destination" ref="896170716"/>
-					</object>
-					<int key="connectionID">717</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -6508,10 +6486,8 @@
 							<reference ref="847432173"/>
 							<reference ref="601187434"/>
 							<reference ref="566239289"/>
-							<reference ref="563608096"/>
 							<reference ref="657696298"/>
 							<reference ref="212886671"/>
-							<reference ref="896170716"/>
 						</object>
 						<reference key="parent" ref="1049"/>
 					</object>
@@ -6558,11 +6534,6 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">555</int>
 						<reference key="object" ref="566239289"/>
-						<reference key="parent" ref="740126098"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">556</int>
-						<reference key="object" ref="563608096"/>
 						<reference key="parent" ref="740126098"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -6762,11 +6733,6 @@
 						<int key="objectID">714</int>
 						<reference key="object" ref="427706282"/>
 						<reference key="parent" ref="1049"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">716</int>
-						<reference key="object" ref="896170716"/>
-						<reference key="parent" ref="740126098"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">718</int>
@@ -7626,7 +7592,6 @@
 					<string>553.IBPluginDependency</string>
 					<string>554.IBPluginDependency</string>
 					<string>555.IBPluginDependency</string>
-					<string>556.IBPluginDependency</string>
 					<string>557.IBPluginDependency</string>
 					<string>558.IBPluginDependency</string>
 					<string>619.IBPluginDependency</string>
@@ -7654,7 +7619,6 @@
 					<string>710.IBPluginDependency</string>
 					<string>711.IBPluginDependency</string>
 					<string>714.IBPluginDependency</string>
-					<string>716.IBPluginDependency</string>
 					<string>718.IBEditorWindowLastContentRect</string>
 					<string>718.IBPluginDependency</string>
 					<string>718.IBWindowTemplateEditedContentRect</string>
@@ -7879,7 +7843,7 @@
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
-					<string>{{363, 500}, {233, 223}}</string>
+					<string>{{363, 530}, {263, 193}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -7892,7 +7856,6 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
@@ -7917,7 +7880,6 @@
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
 					<string>com.binarymethod.BGHUDAppKitPlugin</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{182, 318}, {415, 113}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
