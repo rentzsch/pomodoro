@@ -70,5 +70,6 @@
 -(void) reset;
 -(void) interruptFor:(NSInteger) seconds;
 -(void) resume;
+-(void) complete;
 
 @end

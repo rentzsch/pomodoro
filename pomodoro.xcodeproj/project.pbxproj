@@ -78,8 +78,8 @@
 		69885A470FD3FD770020D132 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BGHUDAppKit.framework; sourceTree = "<group>"; };
 		69B1A36C0FC96D22009B0ACF /* GrowlNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlNotifier.h; sourceTree = "<group>"; };
 		69B1A36D0FC96D22009B0ACF /* GrowlNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlNotifier.m; sourceTree = "<group>"; };
-		69B1A36E0FC96D22009B0ACF /* Pomodoro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pomodoro.h; sourceTree = "<group>"; };
-		69B1A36F0FC96D22009B0ACF /* Pomodoro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pomodoro.m; sourceTree = "<group>"; };
+		69B1A36E0FC96D22009B0ACF /* Pomodoro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pomodoro.h; sourceTree = "<group>"; usesTabs = 1; };
+		69B1A36F0FC96D22009B0ACF /* Pomodoro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pomodoro.m; sourceTree = "<group>"; usesTabs = 1; };
 		69B1A3700FC96D22009B0ACF /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
 		69B1A3710FC96D22009B0ACF /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
 		69B1A3720FC96D22009B0ACF /* StatsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsController.h; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		69B1A3800FC96D96009B0ACF /* About.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
 		69B1A3810FC96D96009B0ACF /* Stats.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Stats.xib; sourceTree = "<group>"; };
 		69B1A4400FC96FFD009B0ACF /* PomodoroController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomodoroController.h; sourceTree = "<group>"; };
-		69B1A4410FC96FFD009B0ACF /* PomodoroController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomodoroController.m; sourceTree = "<group>"; };
+		69B1A4410FC96FFD009B0ACF /* PomodoroController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PomodoroController.m; sourceTree = "<group>"; usesTabs = 1; };
 		69D955630FED0EB1003CBDA8 /* DurationFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DurationFormatter.h; sourceTree = "<group>"; };
 		69D955640FED0EB1003CBDA8 /* DurationFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DurationFormatter.m; sourceTree = "<group>"; };
 		69DC1F900FD5C60B005F3F6B /* PomodoroArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PomodoroArrayController.h; sourceTree = "<group>"; };

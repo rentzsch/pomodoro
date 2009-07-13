@@ -72,6 +72,7 @@
 	NSMenuItem* invalidatePomodoro;
 	NSMenuItem* resumePomodoro;
 	NSMenuItem* setupPomodoro;
+	NSMenuItem* completePomodoro;
 	
 	NSImage* pomodoroImage;
 	NSImage* pomodoroBreakImage;
@@ -104,6 +105,7 @@
 -(IBAction) nameGiven:(id)sender;
 -(IBAction) nameCanceled:(id)sender;
 -(IBAction) reset: (id) sender;
+-(IBAction) complete: (id) sender;
 
 -(IBAction) interrupt: (id) sender;
 -(IBAction) resume: (id) sender;

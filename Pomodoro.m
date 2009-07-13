@@ -46,11 +46,11 @@
 
 -(void) startFor: (NSInteger) seconds {
 	time = seconds; 
-	oneSecTimer = [NSTimer timerWithTimeInterval:1
+	oneSecTimer = [[NSTimer timerWithTimeInterval:1
 											   target:self
 											 selector:@selector(oncePersecond:)													 
 											 userInfo:nil
-											  repeats:YES];
+										  repeats:YES] retain];
     [[NSRunLoop currentRunLoop] addTimer:oneSecTimer forMode:NSRunLoopCommonModes];	
 
 }
@@ -106,6 +106,14 @@
 	if ([delegate respondsToSelector: @selector(pomodoroResumed)]) {
         [delegate pomodoroResumed];		
 	}
+}
+
+-(void) complete {
+	time = 0;
+	[oneSecTimer invalidate];
+	if ([delegate respondsToSelector: @selector(pomodoroFinished)]) {
+		[delegate pomodoroFinished];		
+	}	
 }
 
 - (void) checkIfFinished {

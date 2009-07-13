@@ -220,6 +220,7 @@ OSStatus hotKey(EventHandlerCallRef nextHandler,EventRef anEvent,
 	[startPomodoro setEnabled:YES];
 	[invalidatePomodoro setEnabled:NO];
 	[interruptPomodoro setEnabled:NO];
+	[completePomodoro setEnabled:NO];
 	[resumePomodoro setEnabled:NO];
 	[setupPomodoro setEnabled:YES];
 }
@@ -229,6 +230,7 @@ OSStatus hotKey(EventHandlerCallRef nextHandler,EventRef anEvent,
 	[startPomodoro setEnabled:NO];
 	[invalidatePomodoro setEnabled:NO];
 	[interruptPomodoro setEnabled:NO];
+	[completePomodoro setEnabled:NO];
 	[resumePomodoro setEnabled:NO];
 	[setupPomodoro setEnabled:YES];
 }
@@ -238,6 +240,7 @@ OSStatus hotKey(EventHandlerCallRef nextHandler,EventRef anEvent,
 	[startPomodoro setEnabled:NO];
 	[invalidatePomodoro setEnabled:YES];
 	[interruptPomodoro setEnabled:YES];
+	[completePomodoro setEnabled:YES];
 	[resumePomodoro setEnabled:NO];
 	[setupPomodoro setEnabled:NO];
 	
@@ -248,6 +251,7 @@ OSStatus hotKey(EventHandlerCallRef nextHandler,EventRef anEvent,
 	[startPomodoro setEnabled:NO];
 	[invalidatePomodoro setEnabled:YES];
 	[interruptPomodoro setEnabled:NO];
+	[completePomodoro setEnabled:YES];
 	[resumePomodoro setEnabled:YES];
 	[setupPomodoro setEnabled:NO];
 	
@@ -290,11 +294,17 @@ OSStatus hotKey(EventHandlerCallRef nextHandler,EventRef anEvent,
 }
 
 - (IBAction) reset: (id) sender {
-	
+
 	[self menuReadyToStart];
 	[self showTimeOnStatusBar: _initialTime * 60];
 	[pomodoro reset];
 	
+}
+
+-(IBAction) complete: (id) sender {
+	
+	[self menuReadyToStart];
+	[pomodoro complete];
 }
 
 - (IBAction) interrupt: (id) sender {
@@ -605,6 +615,7 @@ OSStatus hotKey(EventHandlerCallRef nextHandler,EventRef anEvent,
 	invalidatePomodoro = [pomodoroMenu itemWithTitle:@"Reset pomodoro"];
 	resumePomodoro = [pomodoroMenu itemWithTitle:@"Resume pomodoro"];
 	setupPomodoro = [pomodoroMenu itemWithTitle:@"Pomodoro setup"];
+	completePomodoro = [pomodoroMenu itemWithTitle:@"Complete pomodoro"];
 		
 	[statusItem setToolTip:@"Pomodoro Time Management"];
 	[statusItem setHighlightMode:YES];
@@ -649,6 +660,7 @@ OSStatus hotKey(EventHandlerCallRef nextHandler,EventRef anEvent,
 	[invalidatePomodoro release];
 	[resumePomodoro release];
 	[setupPomodoro release];
+	[completePomodoro release];
 	
 	[pomodoroImage release];
 	[pomodoroBreakImage release];
